@@ -1,0 +1,21 @@
+print("please create a account:")
+name=input("enter your name:")
+company_name=input("enter your invest company name:")
+create_password=int(input("please create password:"))
+print("account has been created;")
+print("name:",name)
+print("invest company:",company_name)
+print("welcome to track daily profit:",name)
+password=int(input("please enter your create password:"))
+if password==create_password:
+    day=int(input("enter day:"))
+    buying_price=int(input("enter how much you spent to buying:"))
+    selling_price=int(input("enter you selling amount:"))
+    profit = selling_price - buying_price
+    print("today profit/loss",profit)
+    if(profit>0):
+        print("today is a profit day")
+    elif(profit<0):
+        print("today is a loss day")
+else:
+    print("Invalid password try again.")
